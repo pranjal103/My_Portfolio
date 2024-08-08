@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranjal Togalekar's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./images/logo.jpg" alt="Profile Image">
+                <h1>Pranjal Togalekar</h1>    
+                
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certifications">Certificates</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- JavaScript for Theme Toggle -->
+    <script>
+        const themeToggle = document.querySelector('.theme-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            themeToggle.innerHTML = body.classList.contains('dark-theme') ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+        });
+    </script>
+
+    <!-- Home Section -->
+<section id="home">
+    <div class="container">
+        <h1 class="animated-heading">Welcome to My Portfolio</h1>
+        <h2 class="animated-text">Hi, I'm Pranjal Togalekar, a passionate web developer.</h2>
+        <p>"Crafting digital experiences with code and creativity, I am a web developer who recently earned a Bachelor's in Computer Science, ready to transform ideas into reality."</p>
+        <div class="profile-image">
+            <img src="./images/profile_image.jpeg" alt="Profile Image">
+        </div>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/pranjal-togalekar-9a75352aa"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/pranjal103"><i class="fab fa-github"></i></a>
+            <a href="https://discord.com/users/PRANJAL37164"><i class="fab fa-discord"></i></a>
+            <a href="http://www.instgram.com/10_pran_jal" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <!-- Give below google drive link -->
+        <a href="./resume/CV-Pranjal_Togalekar.pdf" download class="btn download-resume">Download Resume</a>
+    </div>
+</section>
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm Pranjal Togalekar, a web developer with a passion for building interactive and user-friendly web applications. With a background in computer science, I have honed my skills in various programming languages and web technologies. I thrive in environments that challenge me to grow and learn continuously.</p>
+                <p>My journey began with a fascination for technology, and over the years, I have worked on numerous projects that showcase my skills and creativity. I am always excited to take on new challenges and collaborate with like-minded individuals to create impactful solutions.</p>
+                <a href="#about" class="btn read-more">Read More</a>
+            </div>
+            <div class="about-image">
+                <img src="./images/photo.jpg" alt="About Image">
+            </div>
+        </div>
+    </div>
+</section>
+ 
+<!-- Skills Section -->
+<section id="skills">
+    <div class="container">
+        <h2> My Skills</h2>
+        <div class="skills-content">
+            <div class="skill">
+                <h3>HTML5</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>CSS3</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </div>  
+            <div class="skill">
+                <h3>Python</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 65%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>SQL</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </div>
+</section>
+
+    <!-- Certifications Section -->
+<section id="certifications" class="certifications-section">
+    <h2>Certifications</h2>
+    <div class="certificates-container">
+        <!-- Certification Card 1 -->
+        <div class="certification-card">
+            <h3>Full Stack Development_ Let's begin Training</h3>
+            <p>The course consisted of Introduction to Full Stack Development, and Getting Started with Visual Studio Code
+                modules.</p>
+            <a href="./certificates/Full_Stack_Development.pdf" class="view-certificate" target="_blank">View Certificate</a>
+        </div>
+        <!-- Certification Card 2 -->
+        <div class="certification-card">
+            <h3>MS Excel Certification</h3>
+            <p>The course consisted of MS Excel </p>
+            <a href="./certificates/Ms_Excel_certification.jpg" class="view-certificate" target="_blank">View Certificate</a>
+        </div>
+        <!-- Certification Card 3 -->
+        <div class="certification-card">
+            <h3>Certification Title 3</h3>
+            <p>Description of the certification, including any relevant details.</p>
+            <a href="./certificates/certificate3.pdf" class="view-certificate" target="_blank">View Certificate</a>
+        </div>
+        <!-- Certification Card 4 -->
+        <div class="certification-card">
+            <h3>Certification Title 4</h3>
+            <p>Description of the certification, including any relevant details.</p>
+            <a href="./certificates/certificate4.pdf" class="view-certificate" target="_blank">View Certificate</a>
+        </div>
+    </div>
+</section>
+
+    <!-- Project Section -->
+<section id="projects" class="projects-section">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+        <!-- Project Card 1 -->
+        <div class="project-card">
+            <img src="./images/portfolio.jpg" alt="Project 1">
+            <div class="project-content">
+                <h3>Project 1: Portfolio Website</h3>
+                <p>This is a personal portfolio website designed to showcase skills, projects, and contact information.</p>
+                <a href="https://github.com/pranjal103/My_Portfolio" target="_blank" class="view-more-link">View More</a>
+            </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card">
+            <img src="./images/MusicPlayer.jpg" alt="Project 2">
+            <div class="project-content">
+                <h3>Project 2: Music Player-master</h3>
+                <p>Django based music streaming website. User can register/login to the web app, play song, view detailed information of song, search song based on filters such as language and singers, create playlist, add/remove songs to/from playlist, add/remove songs to/from favourites, explore recently played songs.</p>
+                <a href="https://github.com/pranjal103/MusicPlayer-master" target="_blank" class="view-more-link">View More</a>
+            </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="project-card">
+            <img src="./images/school.jpg" alt="Project 3">
+            <div class="project-content">
+                <h3>Project 3: School Management System</h3>
+                <p>A School Management System Java Code allows you to keep the student records, Teachers Records, Student Mark dtails and Exam Details and manage them when needed. This is a simple java project with a good and interactive-looking GUI. This Project Use MySQL Database for managing all the data that store in the database.</p>
+                <a href="https://github.com/pranjal103/School-Management-System-using-Java" target="_blank" class="view-more-link">View More</a>
+            </div>
+        </div>
+
+        <!-- Project Card 4 -->
+        <div class="project-card">
+            <img src="./images/blog.jpg" alt="Project 4">
+            <div class="project-content">
+                <h3>Project 4: Personal Blog using Html and Css</h3>
+                <p>This blog is about the very beautiful mansoon place Chandgad in Maharashtra</p>
+                <a href="https://github.com/pranjal103/myfirstblog" target="_blank" class="view-more-link">View More</a>
+            </div>
+        </div>
+
+        <!-- Project Card 5 -->
+        <div class="project-card">
+            <img src="./images/visual_question.jpg" alt="Project 5">
+            <div class="project-content">
+                <h3>Project 5: Visual-question-answering-master</h3>
+                <p>Used Singular Value Decomposition for image compression; applied various image processing techniques and morphological operations to detect the number of heads.</p>
+                <a href="https://github.com/pranjal103/visual-question-answering-master" target="_blank" class="view-more-link">View More</a>
+            </div>
+        </div>
+
+        <!-- Project Card 6 -->
+        <div class="project-card">
+            <img src="./images/quize.jpg" alt="Project 6">
+            <div class="project-content">
+                <h3>Project 6: Quiz-up-Master</h3>
+                <p>A quiz playing web app based on Django</p>
+                <a href="https://github.com/pranjal103/quiz-up-master" target="_blank" class="view-more-link">View More</a>
+            </div>
+        </div>
+
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p>Let's collaborate to create something extraordinary. Connect with me today!</p>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+            <div class="footer-buttons">
+                <button class="call-button">Call</button>
+                <button class="email-button">Email</button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Theme Toggle -->
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+        }
+    </script>
+</body>
+
+</html>
